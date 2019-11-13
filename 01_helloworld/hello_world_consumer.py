@@ -1,10 +1,11 @@
 import pika
 
 """
-Hello World! (producer)
+Hello World! (consumer)
 The simplest thing that does something
 https://www.rabbitmq.com/tutorials/tutorial-one-python.html
 """
+
 # 1. connect to RabbitMQ server
 conn = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
 channel = conn.channel()
